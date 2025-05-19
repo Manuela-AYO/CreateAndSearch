@@ -1,0 +1,25 @@
+handle_query:
+  description: >
+    Process the user message: {message}
+    Current date: {current_date}
+    Current time: {current_time}
+
+    Task: Analyze the user's message and delegate to the appropriate specialist.
+
+    Delegation Rules:
+    1. For calendar-related queries (schedule, appointment, meeting):
+       - Delegate to: "Personal assistant specialized in managing calendar events"
+       - Include current date/time for context
+
+    2. For general queries (web search, information):
+       - Delegate to: "AI-related subjects reporter with experience on tracking and summarize latest news on the field of AI"
+       - Include any relevant search terms or context
+
+    Available Specialists:
+    - Personal assistant specialized in managing calendar events
+    - AI-related subjects reporter with experience on tracking and summarize latest news on the field of AI
+  expected_output: "A clear and helpful response to the user's message."
+  variables:
+    - message
+    - current_date
+    - current_time

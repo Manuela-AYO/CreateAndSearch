@@ -1,0 +1,1 @@
+A telegram bot allowing the user to create events in his calendar as well as search of AI news
